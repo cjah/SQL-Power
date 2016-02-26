@@ -116,13 +116,14 @@ var TableInput = React.createClass({
 
 
       return (
-        <div>
+        <div id='input'>
           <form id='makeCol' onSubmit={this.props.makeTableSchema}>
             <input id='tableName' placeholder='Table Name'></input><br/>
             <input id='usernameOfDb' placeholder='Username'></input><br/>
             <input id='passwordOfDb' placeholder='Password'></input><br/>
-            <input id='numberOfColumns' placeholder='Number of Columns'></input><br/>
+            <input id='URL' placeholder='URL'></input><br/>
             <button type='submit' onClick={this.props.makeTableSchema}>Create Table Schema!</button>
+            <button type='submit' onClick={this.props.rmTableSchema}>Remove Table Schema!</button>
           </form>
           <button type='submit' onClick={this.props.makeCol}>Add column</button>
           <button type='submit' onClick={this.props.rmCol}>Remove column</button>

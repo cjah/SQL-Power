@@ -14,3 +14,16 @@ body div div{
   margin-top: 10px;
   border: none;
 }
+
+#input {
+  position: relative;
+  margin-top: 10px;
+  border: none;
+}
+
+.script {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  border: none;
+}
